@@ -52,6 +52,7 @@ body, html {
 
 .main img {
     width: 100%;
+    min-width: 765px;
 }
 
 .footer {
