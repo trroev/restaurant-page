@@ -1,1 +1,2 @@
-console.log('restaurant page')
+import { renderHomePage, createNav } from "./modules/home";
+

@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@200;300;400;500;600;700;800&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#content {
+    text-align: center;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #FAF6EA;
+    font-family: 'Karla', sans-serif;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 2fr;
+    width: 100%;
+    background-color: #4c2940;
+    color: #FAF6EA;
+    font-size: 3.5rem;
+    padding: 1.3rem 0 1.3rem 0;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5fr;
+    width: 100%;
+}
+
+.main img {
+    width: 100%;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    background-color: #4c2940;
+    color: #FAF6EA;
+    height: 1fr;
+    width: 100%;
+}
+
+.footer p {
+    font-size: 1.3rem;
+    padding: 1.3rem 1.3rem;
+}
+
+a,
+a:visited {
+    color: #FAF6EA;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #4c2940;
+    background-color: #FAF6EA;
+}
+
+button, input, select, textarea {
+    font-family: inherit;
+    font-size: 50%;
+    border: 0;
+    margin: 2rem 1rem 0 2rem;
+    padding: .5rem;
+    background-color: #4c2940;
+    color: #FAF6EA;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #FAF6EA;
+    color: #4c2940;
+}
