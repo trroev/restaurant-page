@@ -1,2 +1,3 @@
-import { renderHomePage, createNav } from "./modules/home";
+import renderPage from './modules/render';
 
+renderPage();
