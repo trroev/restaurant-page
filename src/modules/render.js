@@ -16,31 +16,25 @@ const createNav = () => {
     nav.classList.add('nav');
     
     const homeButton = document.createElement('button');
-    homeButton.classList.add('nav-button');
+    homeButton.classList.add('home-button');
     homeButton.textContent = 'Home';
-    // homeButton.addEventListener('click', (e) => {
-    //     if (e.target.classList.contains('active')) return;
-    //     setActiveButton(homeButton);
-    //     renderHomePage();
-    // });
+    homeButton.addEventListener('click', () => {
+        renderHomePage();
+    });
 
     const menuButton = document.createElement('button');
-    menuButton.classList.add('nav-button');
+    menuButton.classList.add('menu-button');
     menuButton.textContent = 'Menu';
-    // menuButton.addEventListener('click', (e) => {
-    //     if (e.target.classList.contains('active')) return;
-    //     setActiveButton(menuButton);
-    //     renderMenuPage();
-    // });
+    menuButton.addEventListener('click', () => {
+        renderMenuPage();
+    });
 
     const aboutButton = document.createElement('button');
-    aboutButton.classList.add('nav-button');
+    aboutButton.classList.add('about-button');
     aboutButton.textContent = 'About';
-    // aboutButton.addEventListener('click', (e) => {
-    //     if (e.target.classList.contains('active')) return;
-    //     setActiveButton(aboutButton);
-    //     renderAboutPage();
-    // });
+    aboutButton.addEventListener('click', () => {
+        renderAboutPage();
+    });
 
     nav.appendChild(homeButton);
     nav.appendChild(menuButton);
@@ -48,18 +42,6 @@ const createNav = () => {
 
     return nav;
 };
-
-// function setActiveButton(button) {
-//     const buttons = document.querySelectorAll('.button-nav');
-
-//     buttons.forEach((button) => {
-//         if (button !== this) {
-//             button.classList.remove('active');
-//         }
-//     });
-
-//     button.classList.add('active');
-// };
 
 const createMain = () => {
     const main = document.createElement('div');
@@ -92,7 +74,6 @@ const renderPage = () => {
     const footer = createFooter();
     content.appendChild(footer);
 
-    // setActiveButton(document.querySelector('.button-nav'));
     renderHomePage();
 };
 

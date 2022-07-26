@@ -1,4 +1,5 @@
 const aboutPage = () => {
+    // const main = document.querySelector('.main');
     const contact = document.createElement('div');
     contact.classList.add('contact');
 
@@ -6,12 +7,15 @@ const aboutPage = () => {
     phoneNumber.textContent = '📞 666.666.6666';
 
     const address = document.createElement('p');
-    address.textContent = ''
+    address.textContent = '123 main st'
 
     const location = document.createElement('img');
     location.src = '../dist/images/location.png';
     location.alt = 'Eggplant restuarant location';
 
+    contact.appendChild(phoneNumber);
+    contact.appendChild(address);
+    contact.appendChild(location);
     return contact;
 };
 
