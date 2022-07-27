@@ -3,7 +3,7 @@ const createMain = () => {
     main.classList.add('main');
 
     const scallopDish = document.createElement('img');
-    scallopDish.src = '/images/scallop.png';
+    scallopDish.src = './images/scallop.png';
     scallopDish.alt = 'scallop dish';
 
     main.appendChild(scallopDish);
