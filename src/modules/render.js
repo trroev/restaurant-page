@@ -5,7 +5,7 @@ import renderAboutPage from "./about";
 const createHeader = () => {
     const header = document.createElement('div');
     header.classList.add('header');
-    header.textContent = 'Eggplant';
+    header.textContent = 'Yonder Tavern';
     header.appendChild(createNav());
 
     return header;

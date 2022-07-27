@@ -1,15 +1,15 @@
 const aboutPage = () => {
-    // const main = document.querySelector('.main');
     const contact = document.createElement('div');
     contact.classList.add('contact');
 
     const phoneNumber = document.createElement('p');
-    phoneNumber.textContent = '📞 666.666.6666';
+    phoneNumber.textContent = 'Reservations: 333.666.9999';
 
     const address = document.createElement('p');
-    address.textContent = '123 main st'
+    address.textContent = '123 Main St'
 
     const location = document.createElement('img');
+    location.classList.add('map');
     location.src = '../dist/images/location.png';
     location.alt = 'Eggplant restuarant location';
 
