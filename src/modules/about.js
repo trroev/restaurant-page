@@ -10,7 +10,7 @@ const aboutPage = () => {
 
     const location = document.createElement('img');
     location.classList.add('map');
-    location.src = '../dist/images/location.png';
+    location.src = '/dist/images/location.png';
     location.alt = 'Eggplant restuarant location';
 
     contact.appendChild(phoneNumber);
